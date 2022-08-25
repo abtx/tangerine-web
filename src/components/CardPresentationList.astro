@@ -1,0 +1,16 @@
+---
+export interface Props {
+	items: string[];
+}
+const { items } = Astro.props;
+---
+
+<div class={`flex items-center align-middle justify-center h-full`}>
+	<ul>
+		{
+			items.map((item: string) => {
+				return <li> {item}</li>;
+			})
+		}
+	</ul>
+</div>

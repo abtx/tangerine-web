@@ -1,11 +1,14 @@
 ---
 import Button from "./Button.astro";
+import CardStyle from "./CardStyle.astro";
 ---
 
-<div class="flex flex-row justify-between align-center w-full">
-	<div class="flex flex-row items-center">
-		<img src="/logo.svg" alt="tangerine logo" />
-		Tangerine
+<CardStyle roundedFull>
+	<div class="flex flex-row justify-between align-center w-full p-4">
+		<div class="flex flex-row items-center">
+			<img src="/logo.svg" alt="tangerine logo" />
+			Tangerine
+		</div>
+		<Button name="Start Tangerine" />
 	</div>
-	<Button name="Start Tangerine" />
-</div>
+</CardStyle>

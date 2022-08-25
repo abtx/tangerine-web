@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
 	content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
 	theme: {
@@ -9,6 +10,9 @@ module.exports = {
 			4: "24px",
 			5: "32px",
 			6: "48px",
+		},
+		fontFamily: {
+			sans: ['"Palanquin"', "sans-serif"],
 		},
 		extend: {},
 	},
