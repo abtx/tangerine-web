@@ -53,6 +53,7 @@ const href = "https://app.taskando.com/";
 			</div>
 			<div slot="presentation" class="h-full bg-yellow-500">
 				<CardPresentationList
+					colour="bg-yellow-300"
 					items={[
 						"Simple granularity",
 						"Cool dashboard",
@@ -79,7 +80,16 @@ const href = "https://app.taskando.com/";
 				</p>
 				<p>No ads, no selling data.</p>
 			</div>
-			<div slot="presentation">This is the presentation bit</div>
+			<div slot="presentation" class="h-full bg-blue-500">
+				<CardPresentationList
+					colour="bg-blue-300"
+					items={[
+						"3 first projects are for free",
+						"Simple and super affordable afterwards",
+						"No ads",
+					]}
+				/>
+			</div>
 		</Card>
 
 		<Card
@@ -108,8 +118,17 @@ const href = "https://app.taskando.com/";
 					</li>
 				</ul>
 			</div>
-			<div slot="presentation" class="card-style">
-				This is the presentation bit
+			<div slot="presentation" class="h-full bg-amber-600">
+				<CardPresentationList
+					colour="bg-amber-400"
+					items={[
+						"Specific",
+						"Measurable",
+						"Achievable",
+						"Relevant",
+						"Time-boxed",
+					]}
+				/>
 			</div>
 		</Card>
 

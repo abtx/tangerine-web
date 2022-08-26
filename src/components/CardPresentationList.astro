@@ -1,15 +1,22 @@
 ---
 export interface Props {
 	items: string[];
+	colour: string;
 }
-const { items } = Astro.props;
+const { items, colour } = Astro.props;
 ---
 
 <div class={`flex items-center align-middle justify-center h-full`}>
-	<ul>
+	<ul class="">
 		{
 			items.map((item: string) => {
-				return <li> {item}</li>;
+				return (
+					<li
+						class={`max-w-max px-5 py-3 my-3 bg- ${colour} shadow-md rounded-md`}
+					>
+						{item}
+					</li>
+				);
 			})
 		}
 	</ul>
