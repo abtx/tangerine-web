@@ -4,6 +4,7 @@ import Header from "../components/Header.astro";
 import Card from "../components/Card.astro";
 import Footer from "../components/Footer.astro";
 import CardPresentationList from "../components/CardPresentationList.astro";
+import CardPresentationImage from "../components/CardPresentationImage.astro";
 
 const cta = "Try Tangerine";
 const href = "https://app.taskando.com/";
@@ -20,7 +21,7 @@ const href = "https://app.taskando.com/";
 			href={href}
 			label="Time tracking in your projects"
 		>
-			<div slot="main">
+			<div slot="main" class="mb-2">
 				<p>
 					Tangerine is a drag and drop project management tool that helps you
 					track the time you spend on every task you complete.
@@ -32,10 +33,15 @@ const href = "https://app.taskando.com/";
 					<li>👩‍ Collaboarte in teams</li>
 				</ul>
 			</div>
-			<div slot="presentation">presentation</div>
+			<div slot="presentation" class="h-full bg-amber-400">
+				<CardPresentationImage
+					imageSrc="/app-screenshot.png"
+					imageAlt="Application screenshot"
+				/>
+			</div>
 		</Card>
 
-		<Card label="UX" title="UX you will love." cta={cta} href={href}>
+		<Card label="UX" title="UX you will love." cta={cta} href={href} alternate>
 			<div slot="main">
 				<p>OK, so it’s not completely free.</p>
 				<p>
@@ -81,6 +87,7 @@ const href = "https://app.taskando.com/";
 			title="Smart tasks you will love."
 			cta={cta}
 			href={href}
+			alternate
 		>
 			<div slot="main">
 				<p>Using Tangerine you can make your tasks smart</p>

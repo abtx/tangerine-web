@@ -5,20 +5,21 @@ export interface Props {
 	label: string;
 	cta: string;
 	href: string;
+	alternate?: boolean;
 }
 
-const { title, label, cta, href } = Astro.props as Props;
+const { title, label, cta, href, alternate } = Astro.props as Props;
 ---
 
 <CardStyle>
-	<div class="flex flex-row">
-		<div class="flex flex-col main p-4 w-7/12">
-			<div>
+	<div class={`flex ${alternate ? "flex-row-reverse" : "flex-row"}`}>
+		<div class="flex flex-col main py-5 pl-6 pr-[8rem] w-7/12">
+			<div class="text-gray-400 mb-[5rem]">
 				{label}
 			</div>
-			<h2>{title}</h2>
+			<h1 class="font-bold mb-5">{title}</h1>
 			<slot name="main" />
-			<div>
+			<div class="mt-[5rem]">
 				<a href={href}>{cta}</a>
 			</div>
 		</div>

@@ -1,0 +1,11 @@
+---
+export interface Props {
+	imageSrc: string;
+	imageAlt: string;
+}
+const { imageSrc, imageAlt } = Astro.props;
+---
+
+<div class="flex items-center align-middle justify-center h-full relative">
+	<img src={imageSrc} alt={imageAlt} class="absolute -left-6 -bottom-4" />
+</div>
