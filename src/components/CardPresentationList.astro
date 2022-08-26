@@ -6,7 +6,9 @@ export interface Props {
 const { items, colour } = Astro.props;
 ---
 
-<div class={`flex items-center align-middle justify-center h-full`}>
+<div
+	class="flex items-center align-middle justify-center h-full inherit-min-height"
+>
 	<ul class="">
 		{
 			items.map((item: string) => {

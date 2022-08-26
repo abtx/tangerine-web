@@ -67,6 +67,15 @@ const { title } = Astro.props as Props;
 					@apply mb-2;
 				}
 			}
+
+			@layer components {
+				:global(.inherit-min-height) {
+					min-height: inherit;
+				}
+				:global(.inherit-height) {
+					height: inherit;
+				}
+			}
 		</style>
 	</body>
 </html>
