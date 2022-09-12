@@ -1,14 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
+import MainWrapper from "../components/MainWrapper.astro";
+import BackButton from "../components/BackButton.astro";
 ---
 
-<Layout title="🍊 Tangerine">
-	<header>
-		<Header />
-	</header>
-	<main>
-		<a href="/">Back</a>
+<Layout title="Taskando Privacy Policy">
+	<Header />
+	<MainWrapper>
+		<BackButton />
 		Privacy policy page
-	</main>
+	</MainWrapper>
 </Layout>

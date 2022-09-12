@@ -5,16 +5,15 @@ import Card from "../components/Card.astro";
 import Footer from "../components/Footer.astro";
 import CardPresentationList from "../components/CardPresentationList.astro";
 import CardPresentationImage from "../components/CardPresentationImage.astro";
+import MainWrapper from "../components/MainWrapper.astro";
 
 const cta = "Try Tangerine";
 const href = "https://app.taskando.com/";
 ---
 
-<Layout title="🍊 Tangerine">
-	<header>
-		<Header />
-	</header>
-	<main class="gap-5 flex flex-col">
+<Layout title="Taskando">
+	<Header />
+	<MainWrapper>
 		<Card
 			title="Time tracking you will love."
 			cta={cta}
@@ -134,7 +133,6 @@ const href = "https://app.taskando.com/";
 				/>
 			</div>
 		</Card>
-
-		<Footer />
-	</main>
+	</MainWrapper>
+	<Footer />
 </Layout>

@@ -1,9 +1,10 @@
 ---
 import Button from "./Button.astro";
-import CardStyle from "./CardStyle.astro";
 ---
 
-<CardStyle roundedFull>
+<header
+	class="flex text-2xl flex-col sm:flex-row gap-4 justify-between align-center w-full px-8 py-2 mt-4"
+>
 	<div class="flex flex-row justify-between align-center w-full p-4">
 		<div class="flex flex-row items-center">
 			<img src="/logo.svg" alt="tangerine logo" />
@@ -11,4 +12,4 @@ import CardStyle from "./CardStyle.astro";
 		</div>
 		<Button name="Start Tangerine" />
 	</div>
-</CardStyle>
+</header>
