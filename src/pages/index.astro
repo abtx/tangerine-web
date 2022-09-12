@@ -3,10 +3,19 @@ import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import MainWrapper from "../components/MainWrapper.astro";
+import Hero from "../sections/Hero.astro";
+import Slides from "../sections/Slides.astro";
+import Tiles from "../sections/Tiles.astro";
+import Cta from "../sections/Cta.astro";
 ---
 
 <Layout title="Taskando">
 	<Header />
-	<MainWrapper />
+	<MainWrapper>
+		<Hero />
+		<Slides />
+		<Tiles />
+		<Cta />
+	</MainWrapper>
 	<Footer />
 </Layout>
