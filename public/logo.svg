@@ -1,44 +1,5 @@
-<svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12.5449 32.0437C4.5429 29.8996 -0.205837 21.6745 1.93829 13.6725C4.08242 5.67056 12.3075 0.921821 20.3095 3.06595C28.3115 5.21008 28.9538 12.1961 26.8097 20.1981C24.6655 28.2001 20.5469 34.1878 12.5449 32.0437Z" fill="url(#paint0_linear_47_413)"/>
-<g style="mix-blend-mode:screen">
-<mask id="mask0_47_413" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="1" y="2" width="27" height="31">
-<path d="M12.5449 32.0437C4.5429 29.8996 -0.205837 21.6745 1.93829 13.6725C4.08242 5.67056 12.3075 0.921821 20.3095 3.06595C28.3115 5.21008 28.9538 12.1961 26.8097 20.1981C24.6655 28.2001 20.5469 34.1878 12.5449 32.0437Z" fill="url(#paint1_linear_47_413)"/>
-</mask>
-<g mask="url(#mask0_47_413)">
-<mask id="mask1_47_413" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="15" y="16" width="15" height="13">
-<path d="M15.4643 16.2135L22.0996 27.7062C22.7636 28.8562 24.2536 29.2184 25.3714 28.5016L27.6959 27.0109L29.6214 23.5186C30.3335 22.2269 29.6798 20.607 28.2706 20.1715L15.4643 16.2135Z" fill="black"/>
-</mask>
-<g mask="url(#mask1_47_413)">
-<ellipse rx="15.7091" ry="15.4182" transform="matrix(0.866025 -0.5 -0.5 -0.866025 15.6097 16.4654)" fill="#A36114"/>
-</g>
-<mask id="mask2_47_413" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="15" y="9" width="17" height="12">
-<path d="M15.464 16.2135L28.1434 20.146C29.46 20.5543 30.841 19.7353 31.114 18.3841L31.9101 14.4444L30.1425 10.659C29.565 9.4223 28.0522 8.94574 26.8702 9.62818L15.464 16.2135Z" fill="black"/>
-</mask>
-<g mask="url(#mask2_47_413)">
-<ellipse rx="15.7091" ry="15.4182" transform="matrix(0.866025 -0.5 -0.5 -0.866025 15.6092 16.4655)" fill="#C68C48"/>
-</g>
-<mask id="mask3_47_413" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="15" y="1" width="14" height="16">
-<path d="M15.4642 16.2135L18.3982 3.26657C18.7029 1.92222 20.1027 1.13579 21.4094 1.57492L25.2193 2.85536L27.6138 6.27883C28.396 7.39728 28.0523 8.94573 26.8703 9.62817L15.4642 16.2135Z" fill="black"/>
-</mask>
-<g mask="url(#mask3_47_413)">
-<ellipse cx="15.3189" cy="15.9616" rx="15.7091" ry="15.4182" transform="rotate(-30 15.3189 15.9616)" fill="#FCB563"/>
-</g>
-<mask id="mask4_47_413" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="8" y="0" width="11" height="17">
-<path d="M15.4644 16.2135L8.82908 4.72075C8.16512 3.57074 8.59644 2.09919 9.77614 1.48957L12.2294 0.221853L16.2165 0.300509C17.6912 0.329602 18.7672 1.70573 18.4398 3.14393L15.4644 16.2135Z" fill="black"/>
-</mask>
-<g mask="url(#mask4_47_413)">
-<ellipse cx="15.3189" cy="15.9616" rx="15.7091" ry="15.4182" transform="rotate(-30 15.3189 15.9616)" fill="#FA8F13"/>
-</g>
-</g>
-</g>
-<defs>
-<linearGradient id="paint0_linear_47_413" x1="-2.07636" y1="-9.04425" x2="-26.5764" y2="49.9557" gradientUnits="userSpaceOnUse">
-<stop stop-color="#FCB563"/>
-<stop offset="1" stop-color="#FF005C"/>
-</linearGradient>
-<linearGradient id="paint1_linear_47_413" x1="-2.07636" y1="-9.04425" x2="-26.5764" y2="49.9557" gradientUnits="userSpaceOnUse">
-<stop stop-color="#FCB563"/>
-<stop offset="1" stop-color="#FF005C"/>
-</linearGradient>
-</defs>
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="15" cy="15" r="15" fill="#51C582"/>
+<circle cx="14.9999" cy="15" r="10.1825" fill="#CEFFE3"/>
+<circle cx="15.0001" cy="15" r="5.25547" fill="#51C582"/>
 </svg>
