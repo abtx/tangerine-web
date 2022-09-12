@@ -1,22 +1,20 @@
----
-import CardStyle from "./CardStyle.astro";
----
-
-<CardStyle>
-	<div class="flex p-4">
-		<div class="w-1/2 flex flex-col">
-			<span class="text-sm text-gray-400 mb-3">Contact</span>
-			<ul>
-				<li>Email</li>
-				<li>Facebook</li>
-			</ul>
-		</div>
-		<div class="w-1/2 flex flex-col">
-			<span class="text-sm text-gray-400 mb-3">&#9400; 2022 IX Design UK</span>
-			<ul class="">
-				<li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li>
-				<li><a href="/privacy-policy">Privacy Policy</a></li>
-			</ul>
-		</div>
+<div class="flex p-4 text-xs">
+	<div class="w-1/2 flex flex-col">
+		<span class="text-gray-400 mb-3">Contact</span>
+		<ul>
+			<li class="text-sm">Email</li>
+			<li class="text-sm">Facebook</li>
+		</ul>
 	</div>
-</CardStyle>
+	<div class="w-1/2 flex flex-col">
+		<span class="text-gray-400 mb-3">&#9400; 2022 IX Design UK</span>
+		<ul>
+			<li>
+				<a class="text-sm" href="/terms-and-conditions"
+					>Terms &amp; Conditions</a
+				>
+			</li>
+			<li><a class="text-sm" href="/privacy-policy">Privacy Policy</a></li>
+		</ul>
+	</div>
+</div>
