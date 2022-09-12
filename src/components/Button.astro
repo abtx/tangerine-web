@@ -1,11 +1,6 @@
 ---
-enum size {
-	small,
-	large,
-}
 export interface Props {
 	name: string;
-	size?: size;
 }
 
 const { name } = Astro.props as Props;

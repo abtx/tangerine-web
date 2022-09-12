@@ -1,1 +1,23 @@
-<div>hello im your hero!</div>
+---
+import Button from "../components/Button.astro";
+---
+
+<div class="flex">
+	<div class="w-1/2 flex flex-col gap-3 justify-center">
+		<h1>Time tracking you will grow with</h1>
+		<p>
+			Taskando is a new app on the block that helps you track your projects,
+			combines qualitative and quantiative insights, and facilitates better
+			retrospective, learning, and self-development.
+		</p>
+		<div class="mt-2">
+			<Button name="Find out more" />
+		</div>
+	</div>
+	<div
+		class="w-1/2 bg-blue-100 ml-6 rounded-3xl h-[24.625rem] flex items-center justify-center relative"
+	>
+		<img src="/dots.svg" alt="" class="w-6 absolute top-6 right-6" />
+		<img src="/task.svg" class="w-2/3" alt="An example task" />
+	</div>
+</div>
