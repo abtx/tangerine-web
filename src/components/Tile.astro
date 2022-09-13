@@ -1,0 +1,17 @@
+---
+export interface Props {
+	imgUrl: string;
+	imgAlt?: string;
+	title: string;
+	bgColour: string;
+}
+
+const { imgUrl, title, imgAlt, bgColour } = Astro.props;
+---
+
+<div
+	class={`${bgColour} p-5 rounded-2xl relative overflow-hidden duration-300  ease-in-out hover:scale-[1.02] hover:shadow-2xl hover:z-50`}
+>
+	{title}
+	<img class="absolute -top-4 right-[0px]" src={imgUrl} alt={imgAlt} />
+</div>
