@@ -1,13 +1,116 @@
-<div class="swiper slides flex flex-col">
-	<div class="swiper-wrapper">
-		<div class="swiper-slide">Slide 1</div>
-		<div class="swiper-slide">Slide 2</div>
-		<div class="swiper-slide">Slide 3</div>
-	</div>
-	<div class="swiper-pagination flex justify-center mt-4 gap-1"></div>
-</div>
+---
+import Button from "../components/Button.astro";
+import CardStyle from "../components/CardStyle.astro";
+import Slide from "../components/Slide.astro";
+---
 
-<!-- Initialize Swiper -->
+<CardStyle>
+	<div class="swiper mySwiper flex flex-col w-full bg-white relative">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<Slide
+					imageSrc="/slides/slide-1.svg"
+					imageAlt="circles"
+					header="Why Taskando will make a difference"
+				>
+					<p>
+						There are probably 100s other task managing apps, but Taskando is
+						about self- development, learning, keeping the track of the
+						processes, and better retrospectives. Taskando is designed
+						specifically with those goals in mind.
+					</p>
+				</Slide>
+			</div>
+
+			<div class="swiper-slide">
+				<Slide
+					imageSrc="/slides/slide-4.svg"
+					imageAlt="squares"
+					header="The devil is in the detail"
+				>
+					<p>
+						Keeping it simple, yet effective is Taskando’s mantra. Taskando
+						organisational structure is intuitively broken down into projects,
+						lists, and tasks, which are all tracked and can be annotated, too.
+						To make the most out of the notes, they can be viewed from the
+						insights in the context of tracking data. This is where quantitative
+						meets the qualitative.
+					</p>
+				</Slide>
+			</div>
+
+			<div class="swiper-slide">
+				<Slide
+					imageSrc="/slides/slide-3.svg"
+					imageAlt="blobs"
+					header="Smart granularity"
+				>
+					<p>
+						Unlike other similar apps, Taskando uses an improved tracking system
+						that rounds up the time spent so you get a meaningful overview of
+						the time tracking.
+					</p>
+				</Slide>
+			</div>
+
+			<div class="swiper-slide">
+				<Slide
+					imageSrc="/slides/slide-4.svg"
+					imageAlt="notes"
+					header="Complementary notes"
+				>
+					<p>
+						There are five types of notes you can attach to projects, lists, and
+						tasks: plain notes, requirements, pivot, checklist, and evaluation.
+						The notes will help you keep a thorough qualitative logs about what
+						is happening. It’ll help understand the when’s and why’s of your
+						process better in the retrospective.
+					</p>
+				</Slide>
+			</div>
+
+			<div class="swiper-slide">
+				<Slide
+					imageSrc="/slides/slide-5.svg"
+					imageAlt="progression"
+					header="Work, log, and learn"
+				>
+					<p>
+						Learning from insights is the most important feature of Taskando.
+						The goal is for you to get better at estimating workloads,
+						understanding the process and variables that affect a project over
+						time. Your awarness will improve, and you will be able to create
+						better narratives about the course of you project.
+					</p>
+				</Slide>
+			</div>
+			<div class="swiper-slide">
+				<Slide
+					imageSrc="/slides/slide-6.svg"
+					imageAlt="envelopes"
+					header="Join the waitlist today"
+				>
+					<p>
+						Taskando is just around the corner. Join the waiting list to get
+						notified first when it gets released.
+					</p>
+					<div class="mt-4">
+						<Button name="Join the waitlist today" />
+					</div>
+				</Slide>
+			</div>
+		</div>
+		<img
+			src="/logotype.svg"
+			alt="Taskando logotype"
+			class="absolute bottom-5 left-5 z-50"
+		/>
+		<div
+			class="swiper-pagination flex justify-center gap-1 -mt-[3rem] pb-6 z-50"
+		>
+		</div>
+	</div>
+</CardStyle>
 
 <script>
 	import Swiper, { Navigation, Pagination } from "swiper";
@@ -15,34 +118,16 @@
 
 	Swiper.use([Navigation, Pagination]);
 
-	new Swiper(".slides", {
+	new Swiper(".mySwiper", {
 		autoplay: {
 			delay: 5000,
 		},
 		pagination: {
 			el: ".swiper-pagination",
 			clickable: true,
-			renderBullet: function (className) {
-				return `<span class="bg-blue-600 h-3 w-3 text-white rounded-full font-sans cursor-pointer ease-in-out duration-200 hover:bg-blue-700 ${className}"></span>`;
+			renderBullet: function (index, className) {
+				return `<span class="inline-flex items-baseline justify-center bg-blue-600 h-3 w-3 text-white rounded-full font-sans cursor-pointer ease-in-out duration-200 hover:bg-blue-700 ${className}"></span>`;
 			},
 		},
 	});
 </script>
-
-<style>
-	html,
-	body {
-		height: 100%;
-	}
-
-	.swiper {
-		width: 100%;
-		height: 15rem;
-	}
-
-	.swiper-slide {
-		text-align: center;
-		font-size: 18px;
-		background: #fff;
-	}
-</style>
