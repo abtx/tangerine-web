@@ -2,6 +2,7 @@
 import Button from "../components/Button.astro";
 import CardStyle from "../components/CardStyle.astro";
 import Slide from "../components/Slide.astro";
+import "swiper/css";
 ---
 
 <CardStyle>
@@ -114,7 +115,6 @@ import Slide from "../components/Slide.astro";
 
 <script>
 	import Swiper, { Pagination, Autoplay } from "swiper";
-	import "swiper/css";
 
 	Swiper.use([Pagination, Autoplay]);
 
