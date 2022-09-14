@@ -11,7 +11,7 @@ import Button from "../components/Button.astro";
 			retrospective, learning, and self-development.
 		</p>
 		<div class="mt-2">
-			<Button name="Find out more" />
+			<Button name="Find out more" id="scroll-button" />
 		</div>
 	</div>
 	<div
@@ -26,4 +26,11 @@ import Button from "../components/Button.astro";
 
 <script>
 	import VanillaTilt from "vanilla-tilt";
+
+	const scrollSlider = () => {
+		const slider = document.querySelector(".mySwiper") as HTMLElement;
+		slider.scrollIntoView({ behavior: "smooth" });
+	};
+	const button = document.querySelector("#scroll-button") as HTMLElement;
+	button.addEventListener("click", scrollSlider);
 </script>
