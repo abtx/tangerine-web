@@ -15,7 +15,8 @@
     "prettier-plugin-astro": "^0.5.3"
   },
   "dependencies": {
+    "@astrojs/netlify": "^1.0.1",
     "swiper": "^8.3.2",
-    "@astrojs/netlify": "^1.0.1"
+    "vanilla-tilt": "^1.7.2"
   }
 }
