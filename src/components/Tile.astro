@@ -10,7 +10,7 @@ const { imgUrl, title, imgAlt, bgColour } = Astro.props;
 ---
 
 <div
-	class={`${bgColour} p-5 rounded-2xl relative overflow-hidden duration-300`}
+	class={`${bgColour} p-5 rounded-2xl relative overflow-hidden duration-300 col-span-2 lg:col-span-1`}
 >
 	{title}
 	<img class="absolute -top-4 right-[0px]" src={imgUrl} alt={imgAlt} />
