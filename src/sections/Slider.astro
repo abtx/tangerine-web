@@ -9,14 +9,16 @@ import "swiper/css";
 	<div
 		class="swiper mySwiper flex flex-col w-full bg-white relative rounded-3xl"
 	>
-		<div class="swiper-wrapper">
+		<div class="swiper-wrapper flex items-center">
 			<div class="swiper-slide">
-				<Slide
-					imageSrc="/slides/slide-1.svg"
-					imageAlt="circles"
-					header="Why Taskando will make a difference"
-				>
-					<p>
+				<Slide header="Why Taskando will make a difference">
+					<img
+						slot="image"
+						src="/slides/slide-1.svg"
+						alt="Taskando logo circles"
+						class="w-[10rem]"
+					/>
+					<p slot="body">
 						There are probably 100s other task managing apps, but Taskando is
 						about self- development, learning, keeping the track of the
 						processes, and better retrospectives. Taskando is designed
@@ -26,12 +28,14 @@ import "swiper/css";
 			</div>
 
 			<div class="swiper-slide">
-				<Slide
-					imageSrc="/slides/slide-2.svg"
-					imageAlt="squares"
-					header="The devil is in the detail"
-				>
-					<p>
+				<Slide header="The devil is in the detail">
+					<img
+						slot="image"
+						src="/slides/slide-2.svg"
+						alt="squares"
+						class="w-[10rem]"
+					/>
+					<p slot="body">
 						Keeping it simple, yet effective is Taskando’s mantra. Taskando
 						organisational structure is intuitively broken down into projects,
 						lists, and tasks, which are all tracked and can be annotated, too.
@@ -43,12 +47,14 @@ import "swiper/css";
 			</div>
 
 			<div class="swiper-slide">
-				<Slide
-					imageSrc="/slides/slide-3.svg"
-					imageAlt="blobs"
-					header="Smart granularity"
-				>
-					<p>
+				<Slide header="Smart granularity">
+					<img
+						slot="image"
+						src="/slides/slide-3.svg"
+						alt="blobs"
+						class="w-[12rem]"
+					/>
+					<p slot="body">
 						Unlike other similar apps, Taskando uses an improved tracking system
 						that rounds up the time spent so you get a meaningful overview of
 						the time tracking.
@@ -57,12 +63,14 @@ import "swiper/css";
 			</div>
 
 			<div class="swiper-slide">
-				<Slide
-					imageSrc="/slides/slide-4.svg"
-					imageAlt="notes"
-					header="Complementary notes"
-				>
-					<p>
+				<Slide header="Complementary notes">
+					<img
+						slot="image"
+						src="/slides/slide-4.svg"
+						alt="notes"
+						class="w-[16rem]"
+					/>
+					<p slot="body">
 						There are five types of notes you can attach to projects, lists, and
 						tasks: plain notes, requirements, pivot, checklist, and evaluation.
 						The notes will help you keep a thorough qualitative logs about what
@@ -73,12 +81,14 @@ import "swiper/css";
 			</div>
 
 			<div class="swiper-slide">
-				<Slide
-					imageSrc="/slides/slide-5.svg"
-					imageAlt="progression"
-					header="Work, log, and learn"
-				>
-					<p>
+				<Slide header="Work, log, and learn">
+					<img
+						slot="image"
+						src="/slides/slide-5.svg"
+						alt="progression"
+						class="w-[14rem]"
+					/>
+					<p slot="body">
 						Learning from insights is the most important feature of Taskando.
 						The goal is for you to get better at estimating workloads,
 						understanding the process and variables that affect a project over
@@ -88,17 +98,21 @@ import "swiper/css";
 				</Slide>
 			</div>
 			<div class="swiper-slide">
-				<Slide
-					imageSrc="/slides/slide-6.svg"
-					imageAlt="envelopes"
-					header="Join the waitlist today"
-				>
-					<p>
-						Taskando is just around the corner. Join the waiting list to get
-						notified first when it gets released.
-					</p>
-					<div class="mt-4">
-						<Button name="Join the waitlist today" />
+				<Slide header="Join the waitlist today">
+					<img
+						slot="image"
+						src="/slides/slide-6.svg"
+						alt="envelopes"
+						class="w-[10rem]"
+					/>
+					<div slot="body">
+						<p>
+							Taskando is just around the corner. Join the waiting list to get
+							notified first when it gets released.
+						</p>
+						<div class="mt-4">
+							<Button name="Join the waitlist today" />
+						</div>
 					</div>
 				</Slide>
 			</div>
@@ -108,9 +122,7 @@ import "swiper/css";
 			alt="Taskando logotype"
 			class="absolute bottom-2 sm:bottom-3 md:bottom-5 left-2 md:left-5 z-50"
 		/>
-		<div
-			class="swiper-pagination flex justify-center gap-1 -mt-[3rem] pb-6 z-50"
-		>
+		<div class="swiper-pagination flex justify-center gap-1 pb-6 mb-2 md:pb-4">
 		</div>
 	</div>
 </CardStyle>
@@ -139,9 +151,9 @@ import "swiper/css";
 				styleActiveBullet(swiper);
 			},
 		},
-		autoplay: {
-			delay: 5000,
-		},
+		// autoplay: {
+		// 	delay: 5000,
+		// },
 		speed: 800,
 		pagination: {
 			el: ".swiper-pagination",
