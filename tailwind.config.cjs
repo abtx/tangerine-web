@@ -14,7 +14,20 @@ module.exports = {
 		fontFamily: {
 			sans: ['"Palanquin"', "sans-serif"],
 		},
-		extend: {},
+		extend: {
+			keyframes: {
+				shine: {
+					"0%": { transform: "translate(-100%, 0) rotate(45deg)" },
+					"45%": { transform: "translate(-100%, 0) rotate(45deg)" },
+					"50%": { transform: "translate(0, 0) rotate(45deg)" },
+					"55%": { transform: "translate(100%, 0) rotate(45deg)" },
+					"100%": { transform: "translate(100%, 0) rotate(45deg)" },
+				},
+			},
+			animation: {
+				shine: "shine 8s linear infinite",
+			},
+		},
 	},
 	plugins: [],
 };
