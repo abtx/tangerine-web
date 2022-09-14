@@ -3,14 +3,19 @@ export interface Props {
 	name: string;
 	id?: string;
 	href?: string;
+	minimal?: boolean;
 }
 
-const { name, id, href } = Astro.props as Props;
+const { name, id, href, minimal } = Astro.props as Props;
 ---
 
 <a href={href} target="_blank">
 	<button
-		class="py-3 px-4 bg-blue-600 text-white rounded-full text-lg relative overflow-hidden duration-300 ease-in-out hover:scale-[1.01] hover:shadow-xl hover:z-50"
+		class={`${
+			minimal
+				? "border-blue-600 border-2 text-blue-600"
+				: "bg-blue-600  text-white"
+		} py-3 px-4 rounded-full text-lg relative overflow-hidden duration-300 ease-in-out hover:scale-[1.01] hover:shadow-xl hover:z-50`}
 		id={id}
 	>
 		<span class="z-20">{name}</span>
