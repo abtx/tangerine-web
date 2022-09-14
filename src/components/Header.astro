@@ -3,16 +3,17 @@ import Button from "./Button.astro";
 ---
 
 <header
-	class="flex text-2xl flex-col sm:flex-row gap-4 justify-between align-center w-full my-6"
+	class="flex text-2xl flex-col sm:flex-row gap-4 justify-between align-center w-full my-5"
 >
-	<div class="flex flex-row justify-between align-center w-full">
-		<div class="flex flex-row items-center text-xlg gap-2">
-			<img src="/logo.svg" alt="tangerine logo" />
-			<div class="flex items-baseline gap-2 mb-1">
-				<span class="font-bold">Taskando</span>
-				<span class="text-gray-400 font-light text-lg">\(task·​an·​dō)\</span>
-			</div>
+	<div class="flex flex-row items-center text-xlg gap-2">
+		<img src="/logo.svg" alt="tangerine logo" />
+		<div class="flex items-baseline gap-2 mb-1">
+			<span class="font-bold">Taskando</span>
+			<span class="text-gray-400 font-light text-lg">\(task·​an·​dō)\</span>
 		</div>
+	</div>
+
+	<div>
 		<Button name="Join the waitlist today" />
 	</div>
 </header>
