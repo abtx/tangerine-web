@@ -4,12 +4,18 @@ export interface Props {
 	id?: string;
 	href?: string;
 	minimal?: boolean;
+	nofollow?: boolean;
 }
 
-const { name, id, href, minimal } = Astro.props as Props;
+const { name, id, href, minimal, nofollow } = Astro.props as Props;
 ---
 
-<a href={href} target="_blank" class="w-full md:w-auto flex">
+<a
+	href={href}
+	target="_blank"
+	class="w-full md:w-auto flex"
+	rel={nofollow ? "nofollow" : ""}
+>
 	<button
 		class={`${
 			minimal
