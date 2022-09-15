@@ -1,14 +1,6 @@
----
-export interface Props {
-	roundedFull?: boolean;
-}
-const { roundedFull } = Astro.props;
----
-
 <div
-	class={`border-gray-100 border-2 ${
-		roundedFull ? "rounded-full" : "rounded-3xl"
-	} shadow-md overflow-hidden`}
+	class={`border-gray-100 border-1 rounded-3xl
+	 shadow-md overflow-hidden`}
 >
 	<slot />
 </div>
