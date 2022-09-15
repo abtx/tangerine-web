@@ -9,14 +9,16 @@ import "swiper/css";
 	<div
 		class="swiper mySwiper flex flex-col w-full bg-white relative rounded-3xl"
 	>
-		<div class="swiper-wrapper flex items-center">
+		<div
+			class="swiper-wrapper flex items-start pt-5 md:pt-[0px] md:items-center"
+		>
 			<div class="swiper-slide">
 				<Slide header="Why Taskando will make a difference">
 					<img
 						slot="image"
 						src="/slides/slide-1.svg"
 						alt="Taskando logo circles"
-						class="w-[10rem]"
+						class="w-[10rem] object-contain"
 					/>
 					<p slot="body">
 						There are probably 100s other task managing apps, but Taskando is
@@ -110,9 +112,10 @@ import "swiper/css";
 							Taskando is just around the corner. Join the waiting list to get
 							notified first when it gets released.
 						</p>
-						<div class="mt-4">
+						<div class="mt-4 flex flex-wrap">
 							<Button
 								name="Join the waitlist"
+								minimal
 								href="https://abtx.typeform.com/to/sBQ8OlW8"
 							/>
 						</div>
