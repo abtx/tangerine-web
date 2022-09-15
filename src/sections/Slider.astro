@@ -131,9 +131,9 @@ import "swiper/css";
 </CardStyle>
 
 <script>
-	import Swiper, { Pagination, Autoplay } from "swiper";
+	import Swiper, { Pagination, Keyboard } from "swiper";
 
-	Swiper.use([Pagination, Autoplay]);
+	Swiper.use([Pagination, Keyboard]);
 
 	const styleActiveBullet = (swiper: Swiper) => {
 		swiper.pagination.bullets.forEach((bullet) => {
@@ -154,9 +154,10 @@ import "swiper/css";
 				styleActiveBullet(swiper);
 			},
 		},
-		// autoplay: {
-		// 	delay: 5000,
-		// },
+		keyboard: {
+			enabled: true,
+			onlyInViewport: false,
+		},
 		speed: 800,
 		pagination: {
 			el: ".swiper-pagination",
