@@ -2,13 +2,16 @@
 import Button from "../components/Button.astro";
 ---
 
-<div class="flex flex-col lg:flex-row">
-	<div class="w-full lg:w-1/2 flex flex-col gap-3 md:justify-center">
-		<h1>Time tracking you will grow with</h1>
+<div
+	class="grid grid-cols-1 lg:grid-cols-2 md:gap-3 bg-blue-100 rounded-3xl overflow-hidden"
+>
+	<div class="flex flex-col gap-3 md:justify-center p-4 pt-6 md:p-6">
+		<h1>Time tracking you grow with</h1>
 		<p>
-			Taskando is a new app on the block that helps you track your projects,
-			combines qualitative and quantiative insights, and facilitates better
-			retrospective, learning, and self-development.
+			Taskando is a new app on the block that helps you track your projects.<br
+			/>
+			It combines qualitative and quantiative insights, and facilitates better retrospective,
+			learning, and self-development.
 		</p>
 		<div class="mt-2 flex gap-2 flex-wrap">
 			<Button name="Find out more" id="scroll-button" minimal />
@@ -19,9 +22,7 @@ import Button from "../components/Button.astro";
 		</div>
 	</div>
 	<div
-		class="w-full lg:w-1/2 bg-blue-100 mt-3 md:mt-4 lg:mt-[0px] lg:ml-6 rounded-3xl h-[16rem] sm:h-[24.625rem] flex items-center justify-center relative"
-		data-tilt
-		data-tilt-max="5"
+		class="bg-blue-600 mt-3 md:mt-4 lg:mt-[0px] h-[16rem] sm:h-[24.625rem] flex items-center justify-center relative"
 	>
 		<img
 			src="/dots.svg"
@@ -34,6 +35,8 @@ import Button from "../components/Button.astro";
 			alt="An example task"
 			width="400"
 			height="185"
+			data-tilt
+			data-tilt-max="5"
 		/>
 	</div>
 </div>
@@ -42,7 +45,7 @@ import Button from "../components/Button.astro";
 	import VanillaTilt from "vanilla-tilt";
 
 	const scrollSlider = () => {
-		const slider = document.querySelector(".mySwiper") as HTMLElement;
+		const slider = document.querySelector(".cards") as HTMLElement;
 		slider.scrollIntoView({ behavior: "smooth" });
 	};
 	const button = document.querySelector("#scroll-button") as HTMLElement;

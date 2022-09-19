@@ -1,0 +1,69 @@
+---
+import Card from "../components/Card.astro";
+---
+
+<div class="cards grid grid-cols-1 lg:grid-cols-2 gap-4">
+	<Card header="Learning about your projects">
+		<img
+			slot="image"
+			src="/cards/circles.svg"
+			alt="Taskando logo circles"
+			class="h-[10rem] object-contain"
+			width="274"
+			height="274"
+		/>
+		<p slot="body">
+			Learning about projects is inherently difficult, which makes it hard to
+			estimate them with confidence. Taskando is here to change that. With
+			Taskando, you can enter rich logs of data that help with analysing your
+			projects retrospectively.
+		</p>
+	</Card>
+
+	<Card header="Work, log, and grow">
+		<img
+			slot="image"
+			src="/cards/shapes.svg"
+			alt="shapes"
+			class="w-[10rem] object-contain"
+			width="300"
+			height="300"
+		/>
+		<p slot="body">
+			Building your confidence and extending your knowledge about your work and
+			how external variables shape it is the most important feature of Taskando.
+			Improve your attention to processes, understand how long your projects
+			take and why, and gain more confidence estimating and talking about your
+			projects.
+		</p>
+	</Card>
+	<Card header="Smart granularity">
+		<img
+			slot="image"
+			src="/cards/blobs.svg"
+			alt="blobs"
+			class="w-[12rem] object-contain"
+			width="307"
+			height="322"
+		/>
+		<p slot="body">
+			Taskando has an improved tracking system that rounds up the time spent, so
+			you get a meaningful overview of the time tracking.
+		</p>
+	</Card>
+	<Card header="Comprehensive notes">
+		<img
+			slot="image"
+			src="/cards/notes.svg"
+			alt="notes"
+			class="w-[16rem] object-contain"
+			width="374"
+			height="79"
+		/>
+		<p slot="body">
+			Taskando makes it easy to add notes and access them for things like
+			requirements, check lists, retrospectives, and note down things that
+			change and affect your timelines.
+		</p>
+	</Card>
+</div>

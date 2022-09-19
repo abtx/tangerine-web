@@ -17,7 +17,6 @@
   "dependencies": {
     "@astrojs/netlify": "^1.0.1",
     "@astrojs/partytown": "^1.0.0",
-    "swiper": "^8.3.2",
     "vanilla-tilt": "^1.7.2"
   }
 }

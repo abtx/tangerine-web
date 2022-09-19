@@ -1,0 +1,23 @@
+---
+import CardStyle from "./CardStyle.astro";
+
+export interface Props {
+	header: string;
+}
+
+const { header } = Astro.props;
+---
+
+<CardStyle class="bg-white">
+	<div class="flex flex-col p-4 md:p-6 gap-5">
+		<div class="flex items-center justify-center h-[10rem] md:h-[10rem]">
+			<slot name="image" />
+		</div>
+		<div class="flex pt-3">
+			<div class="flex flex-col gap-3">
+				<h1>{header}</h1>
+				<slot name="body" />
+			</div>
+		</div>
+	</div>
+</CardStyle>
