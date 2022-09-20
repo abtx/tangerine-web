@@ -3,7 +3,7 @@ import Button from "../components/Button.astro";
 ---
 
 <div
-	class="grid grid-cols-1 lg:grid-cols-2 md:gap-3 bg-blue-100 rounded-3xl overflow-hidden"
+	class="grid grid-cols-1 lg:grid-cols-2 bg-blue-100 rounded-3xl overflow-hidden"
 >
 	<div class="flex flex-col gap-3 md:justify-center p-4 pt-6 md:p-6">
 		<h1>Time tracking you grow with</h1>
@@ -22,19 +22,14 @@ import Button from "../components/Button.astro";
 		</div>
 	</div>
 	<div
-		class="bg-blue-600 mt-3 md:mt-4 lg:mt-[0px] h-[16rem] sm:h-[24.625rem] flex items-center justify-center relative"
+		class="bg-blue-600 lg:min-h-[30rem] flex items-center justify-center relative -order-1 lg:order-2"
 	>
 		<img
-			src="/dots.svg"
-			alt=""
-			class="w-6 absolute top-3 sm:top-6 right-4 sm:right-6 z-0"
-		/>
-		<img
-			src="/task@2x.png"
-			class="w-full md:w-3/4 xl:w-2/3 z-10"
+			src="/hero-mockup.png"
+			class="w-full md:w-3/4 xl:w-2/3 z-10 object-contain p-4 -mt-[4rem]"
 			alt="An example task"
-			width="400"
-			height="185"
+			width="1047"
+			height="846"
 			data-tilt
 			data-tilt-max="5"
 		/>
